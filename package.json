@@ -1,22 +1,43 @@
 {
-    "name": "deploy-preview-469-at-30-11-2021-version",
-    "version": "30.11.2021",
-    "main": "bot.js",
-    "scripts": {
-        "start": "node .",
-        "node-update": "npm i --save-dev node@16 && npm config set prefix=$(pwd)/node_modules/node && export PATH=$(pwd)/node_modules/node/bin:$PATH",
-        "node-clean": "rm -rf node_modules && rm package-lock.json && npm cache clear --force && npm cache clean --force && npm i"
-    },
-    "dependencies": {
-        "discord-logs": "^2.0.1",
-        "discord-music-player": "^8.3.1",
-        "discord.js": "^13.1.0",
-        "djs-games": "^2.1.10",
-        "easy-json-database": "^1.5.0",
-        "lyrics-finder": "^21.7.0",
-        "process": "^0.11.10"
-    },
-    "devDependencies": {
-        "node": "^16.10.0"
-    }
-}
+
+                        "name": "scratch-for-discord-bot",
+
+                        "version": "1.0.0",
+
+                        "main": "boot.js",
+
+                        "scripts": {
+
+                            "start": "npm i && node .",
+
+                            "node-update": "npm i --save-dev node@17 && npm config set prefix=$(pwd)/node_modules/node && export PATH=$(pwd)/node_modules/node/bin:$PATH",
+
+                            "node-clean": "rm -rf node_modules && rm package-lock.json && npm cache clear --force && npm cache clean --force && npm i"
+
+                        },
+
+                        "dependencies": {
+
+                             "djs-games": "^2.1.10",
+
+                            "lyrics-finder": "^21.7.0",
+
+                            "os-utils": "0.0.14",
+
+                            "moment": "latest",
+
+                            "discord.js": "^13.1.0",
+"process":"^0.11.10",
+"easy-json-database": "^1.5.0",
+"discord-logs": "^2.0.1"
+
+                            
+                        },
+
+                        "devDependencies": {
+
+                            "node": "^17"
+
+                        }
+
+                    }
